@@ -18,12 +18,13 @@ reversible_step CO_adsorption
     1 *   1
   final
     1 CO* 1
-  pre_expon  1.000e+7
-  pe_ratio   2.000
+  pre_expon  0.002
+  pe_ratio   2.0e-16
   activ_eng  0.000
 end_reversible_step
 
 ############################################################################
+# not given in Wintterlin, so just use what's here, I guess
 
 reversible_step O2_adsorption
   gas_reacs_prods  O2 -1
@@ -51,13 +52,13 @@ reversible_step O_diffusion
   final
     1 *   1
 	2 O*  1
-  pre_expon  1.000e+6
+  pre_expon  5.0e+9
   pe_ratio   1.000
-  activ_eng  0.000
+  activ_eng  0.43
 end_reversible_step
 
 ############################################################################
-
+# Wintterlin says this is much faster than everything else, so just make it 10x O*
 reversible_step CO_diffusion
   sites 2
   neighboring 1-2
@@ -67,7 +68,7 @@ reversible_step CO_diffusion
   final
     1 *   1
 	2 CO* 1
-  pre_expon  1.000e+6
+  pre_expon  5.0e+10
   pe_ratio   1.000
   activ_eng  0.000
 end_reversible_step
@@ -84,8 +85,8 @@ step CO_O_oxidation
   final
     1 *    1
     2 *    1
-  pre_expon  4.500e+2
-  activ_eng  0.000
+  pre_expon  5.0e+7
+  activ_eng  0.49
 end_step
 
 ############################################################################

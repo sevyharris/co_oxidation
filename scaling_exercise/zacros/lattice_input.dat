@@ -3,7 +3,7 @@
 
 lattice default_choice
 
-hexagonal_periodic 1.000 20 20
+hexagonal_periodic 1.000 10 10
 
 end_lattice
 
