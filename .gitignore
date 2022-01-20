@@ -1,0 +1,12 @@
+rmg_wintterlin/chemkin/
+rmg_wintterlin/cantera/chem.cti
+rmg_wintterlin/output.html
+rmg_wintterlin/output_edge.html
+rmg_wintterlin/restart_from_seed.py
+rmg_wintterlin/rms/
+rmg_wintterlin/seed/
+rmg_wintterlin/slurm-22814502.out
+rmg_wintterlin/solver/
+rmg_wintterlin/species/
+rmg_wintterlin/statistics.xls
+
