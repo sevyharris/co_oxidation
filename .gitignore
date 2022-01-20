@@ -9,4 +9,6 @@ rmg_wintterlin/slurm-22814502.out
 rmg_wintterlin/solver/
 rmg_wintterlin/species/
 rmg_wintterlin/statistics.xls
-
+scaling_exercise/monte_coffee/
+# scaling_exercise/monte_coffee/base
+scaling_exercise/zacros/

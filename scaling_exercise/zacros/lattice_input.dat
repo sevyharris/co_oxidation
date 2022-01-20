@@ -1,4 +1,5 @@
 # KMC lattice specification for a default 6-fold lattice (each site has 6 neighbours)
+# Multiply by two to get equivalent Monte Coffee lattice size
 
 lattice default_choice
 
