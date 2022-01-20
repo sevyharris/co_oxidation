@@ -1,0 +1,13 @@
+# Just an empty energetics file (energetics not the focus of this tutorial)
+
+energetics
+
+cluster Empty
+  sites 1
+  lattice_state
+    & & &
+  cluster_eng  0.000
+end_cluster
+
+end_energetics
+

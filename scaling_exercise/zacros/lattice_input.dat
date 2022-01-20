@@ -1,0 +1,8 @@
+# KMC lattice specification for a default 6-fold lattice (each site has 6 neighbours)
+
+lattice default_choice
+
+hexagonal_periodic 1.000 20 20
+
+end_lattice
+
