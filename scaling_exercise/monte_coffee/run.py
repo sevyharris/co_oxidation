@@ -19,8 +19,10 @@ from user_kmc import NeighborKMC
 import user_sites
 import user_system
 import user_events
+import time
 
 
+start_time = time.time()
 print("CO Oxidation Practice")
 
 T = 247  # Kelvin
@@ -58,6 +60,8 @@ gameboard = user_system.System(atoms=atoms, sites=sites)
 gameboard.set_neighbors(Ncutoff, pbc=True)
 gameboard.cover_system(user_sites.SPECIES_OX, 0.25)
 
+init_time = time.time()
+print(f"done setting up neighbors {init_time}")
 events = [
     user_events.COAdsorption,
     user_events.O2Adsorption,
@@ -83,4 +87,8 @@ sim = NeighborKMC(
 
 sim.run_kmc()
 
-print('Done')
+end_time = time.time()
+duration = end_time - start_time
+
+print(f'Done {duration}\n')
+
